@@ -27,28 +27,4 @@ func main() {
 		fmt.Printf("Stack trace:\n%+v\n", err)
 		os.Exit(1)
 	}
-
-	//rows, err := db.Query("select age, name from users where age = 2")
-	//if err != nil {
-	//	fmt.Printf("Original error: %T %v\n", errors.Cause(err), errors.Cause(err))
-	//	fmt.Printf("Stack trace:\n%+v\n", err)
-	//	os.Exit(1)
-	//}
-	//defer rows.Close()
-	//type row struct {
-	//	age  int
-	//	name string
-	//}
-	//got := []row{}
-	//for rows.Next() {
-	//	var r row
-	//	err = rows.Scan(&r.age, &r.name)
-	//	if err != nil {
-	//		fmt.Printf("Original error: %T %v\n", errors.Cause(err), errors.Cause(err))
-	//		fmt.Printf("Stack trace:\n%+v\n", err)
-	//		os.Exit(1)
-	//	}
-	//	got = append(got, r)
-	//}
-	//fmt.Printf("got:%v\n", got)
 }
